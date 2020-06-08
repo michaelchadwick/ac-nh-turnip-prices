@@ -139,6 +139,11 @@ body {
 h1 {
   text-align: center;
   font-size: 1.8rem;
+  margin: 0;
+}
+
+h1 span {
+  display: inline-block;
 }
 
 h2 {
@@ -150,7 +155,7 @@ h2 {
   width: 100%;
   max-width: 1400px;
   box-sizing: border-box;
-  margin: 16px auto;
+  margin: 0 auto 16px;
   border-radius: 40px;
   padding: 16px 0px;
   padding-bottom: 16px;
@@ -248,12 +253,12 @@ h2 {
   background: var(--center-bg-color);
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 0 16px 16px;
   align-items: center;
 }
 
 .form__row {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   margin-bottom: 16px;
   justify-content: center;
@@ -265,7 +270,7 @@ h2 {
   display: block;
   font-weight: 800;
   font-size: 1.25rem;
-  margin: 8px auto;
+  margin: 8px auto 0;
   color: var(--form-h6-text-color);
   text-align: center;
 }
@@ -282,7 +287,7 @@ h2 {
 .input__group {
   display: flex;
   flex-direction: column;
-  margin: 8px;
+  margin: 4px;
   align-items: center;
 }
 
@@ -567,6 +572,12 @@ input[type=number] {
   cursor: pointer;
 }
 
+.permalink.floating,
+button.floating {
+  display: inline-block;
+  margin: 0 0 8px 8px;
+}
+
 .permalink .fa-copy {
   margin: 0 8px;
   height: 20px;
@@ -650,4 +661,8 @@ input[type=number] {
     height: 40px;
     min-height: 40px;
   }
+}
+
+.hidden {
+  display: none !important;
 }
